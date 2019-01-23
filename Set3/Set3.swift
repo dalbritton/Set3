@@ -2,7 +2,7 @@
 //  Set3.swift
 //  Set3
 //
-//  Created by davida on 1/1/19.
+//  Created by davida on 1/22/19.
 //  Copyright © 2019 davida. All rights reserved.
 //
 
@@ -384,7 +384,7 @@ struct Set3 {
         return rating == 4
     }
     
-} //SetApp
+} //Set3
 
 extension Set3 {
     private struct Constants {

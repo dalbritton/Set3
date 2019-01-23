@@ -1,8 +1,8 @@
 //
 //  BoardPosition.swift
-//  SetApp
+//  Set3
 //
-//  Created by davida on 1/2/19.
+//  Created by davida on 1/22/19.
 //  Copyright © 2019 davida. All rights reserved.
 //
 
