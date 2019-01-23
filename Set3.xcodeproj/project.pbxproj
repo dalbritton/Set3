@@ -64,8 +64,8 @@
 			children = (
 				635873F521F80E920019C80D /* Main.storyboard */,
 				635873FA21F80EBF0019C80D /* ViewController.swift */,
-				6358740421F810DA0019C80D /* Grid.swift */,
 				635873F821F80EBE0019C80D /* Set3.swift */,
+				6358740421F810DA0019C80D /* Grid.swift */,
 				635873FB21F80EBF0019C80D /* BoardPosition.swift */,
 				635873FC21F80EBF0019C80D /* Card.swift */,
 				635873EF21F80D6F0019C80D /* Info.plist */,

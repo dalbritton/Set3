@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //Build a grid to hold 12 initial cards
-    var grid = Grid(layout: Grid.Layout.dimensions(rowCount: 3, columnCount: 4))
+    //Create a grid to hold 12 initial cards
+    lazy var grid = Grid(layout: Grid.Layout.dimensions(rowCount: 3, columnCount: 4), frame: BoardView.bounds)
     
     var game = Set3()
     
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         syncViewUsingModel()
     }
     
+    @IBOutlet weak var BoardView: UIView!
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var dealButton: UIButton! { didSet { dealButton.layer.cornerRadius = 8 } }
@@ -57,8 +58,6 @@ class ViewController: UIViewController {
     private func syncViewUsingModel() {
         //Show the cards that need to be shown, hiding all others
         for atPosition in 0..<game.board.count {
-            //Clear the placeholder title we used in NIB
-            cardButtons[atPosition].setTitle(nil, for: UIControl.State.normal)
             if game.board[atPosition].card == nil {
                 //No card to show (so hide it)
                 cardButtons[atPosition].setAttributedTitle(nil, for: UIControl.State.normal)
