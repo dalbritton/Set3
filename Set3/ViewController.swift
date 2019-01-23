@@ -10,15 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //Build a grid to hold 12 initial cards
+    var grid = Grid(layout: Grid.Layout.dimensions(rowCount: 3, columnCount: 4))
+    
     var game = Set3()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Adjust the state of some controls before they are drawn the first time
-        for index in cardButtons.indices {
-            cardButtons[index].backgroundColor = UIColor(cgColor: view.backgroundColor!.cgColor) //make hidden
-            cardButtons[index].layer.cornerRadius = 8
-        }
         game.newGame()
         syncViewUsingModel()
     }
